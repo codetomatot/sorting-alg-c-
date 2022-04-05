@@ -11,7 +11,6 @@ int main() {
     for(int i = 0; i < arrSize; i++) {
         arr[i] = rand() % 180;
     }
-    // int len = *(&arr + 1) - arr;
 
     RenderWindow window(VideoMode(200,200), "sfml works");
     RectangleShape rect;
@@ -42,7 +41,6 @@ int main() {
                 }
                 arr[pos] = cv;
             }
-            // std::cout << arr[i] << std::endl;
             window.draw(rect);
         }
 
